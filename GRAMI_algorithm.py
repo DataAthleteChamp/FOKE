@@ -290,7 +290,7 @@ def grami_mine(G: nx.Graph, tau: int):
 # --- Example usage (for testing or demonstration) ---
 if __name__ == "__main__":
     # Load an example graph (LG format file)
-    G = load_lg("datasets/test2.lg")  # user-provided LG graph file
+    G = load_lg("datasets/citeseer.lg")  # user-provided LG graph file
     min_support = 2
     patterns = grami_mine(G, min_support)
     print(f"Found {len(patterns)} frequent subgraph patterns.")
